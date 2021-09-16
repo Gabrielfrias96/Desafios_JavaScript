@@ -12,6 +12,14 @@ h2{
     text-align: center;
 }
 
+h4{
+    color: red;
+}
+
+h5{
+    color: green;
+}
+
 span{
     padding: 1px;
     border-radius: 15px;
