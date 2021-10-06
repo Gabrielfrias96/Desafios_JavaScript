@@ -6,11 +6,6 @@ const tienda = []
         }
 
  
- 
-
-
-
-
 //Add products to Shop
 function addProduct(){
     let name = document.getElementById("nameProduct").value;
@@ -26,9 +21,11 @@ function addProduct(){
 function verProductos(){
     tienda.forEach((productos) =>{
         document.getElementById("tienda").innerHTML+=`
-        <div class="card">
-            <h3>${productos.nombre}</h3>
-            <h3>${productos.precio}</h3>
+        <div class="col-md-3 mt-5">
+        <div class="card text-center">
+        <h3>${productos.nombre}</h3>
+        <h3>${productos.precio}</h3>
+    </div>
         </div> `  })
     }
 
