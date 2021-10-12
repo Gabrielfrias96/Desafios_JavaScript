@@ -53,9 +53,10 @@ function renderCarrito(){
   contenedorCarrito.innerHTML="";
   for (producto of carrito){
       contenedorCarrito.innerHTML+=`
-                <div class="col-4"><h6>${producto.nombre}</h6></div>
-                <div class="col-4"><h6>${producto.precio}</h6></div>
-                <div class="col-4"><h6>1</h6></div>
+                <div class="col-3"><h6>${producto.nombre}</h6></div>
+                <div class="col-3"><h6>${producto.precio}</h6></div>
+                <div class="col-3"><h6>Cantidad: 1</h6></div>
+                <div class="col-3"> <a onclick="removeProduct(${producto.id})"><i class="fas fa-trash-alt"></i></a></div>
                 <hr>
       `
   }
@@ -69,4 +70,16 @@ function sumaCarrito(){
     let containerTotal = document.getElementById(`total`)
     containerTotal.innerHTML=`${total}`
     console.log(total)
+}
+
+// Remover productos del carrito 
+function removeProduct(idProducto){
+    let id = idProducto
+    let serchProduct = carrito.find((producto)=> producto.id === id)
+    let positionProduct = carrito.findIndex((producto) => producto.id === id)
+    carrito.splice(positionProduct,1)
+    console.log(positionProduct)
+    renderCarrito()
+    contador()
+
 }
