@@ -20,8 +20,6 @@ contenedorModal.addEventListener("click", ()=>{
     contenedorModal.classList.toggle("modal-active")
 })
 
-
-
 // Array contenedor del carrito
 let carrito = [];
 
@@ -40,24 +38,35 @@ function contador(){
 
 function add(x){
  let id = x ;
- let producto = productos.find(item => id)
- carrito.push(producto)
+ let addProducto = productos.find(item => {
+     return item.id === id})
+ carrito.push(addProducto)
  contador()
  renderCarrito()
- console.log(carrito)
+ sumaCarrito()
+
 }
 
-//renderizar carrito
+// actualizar y renderizar carrito
 function renderCarrito(){
   const contenedorCarrito = document.getElementById("containerProductos");
   contenedorCarrito.innerHTML="";
-  carrito.forEach((producto)=>{
-      contenedorCarrito.innerHTML=`
+  for (producto of carrito){
+      contenedorCarrito.innerHTML+=`
                 <div class="col-4"><h6>${producto.nombre}</h6></div>
                 <div class="col-4"><h6>${producto.precio}</h6></div>
-                <div class="col-4"><h6>Cantidad</h6></div>
+                <div class="col-4"><h6>1</h6></div>
                 <hr>
       `
-  })
+  }
   
+}
+
+// Funcion para saber saldo total 
+
+function sumaCarrito(){
+    let total = carrito.reduce((acc, item)=>{ return acc + item.precio},0)
+    let containerTotal = document.getElementById(`total`)
+    containerTotal.innerHTML=`${total}`
+    console.log(total)
 }
