@@ -35,3 +35,8 @@ i{
 .container-total{
     background-color:rgb(133, 247, 190);
 }
+div a i{
+    color:red;
+    font-size:1.5rem;
+    cursor:pointer;
+}

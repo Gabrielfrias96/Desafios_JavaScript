@@ -1,3 +1,5 @@
+//Renderizado de la tienda
+
 for (producto of productos){
     let containerShop = document.getElementById("shop");
     containerShop.innerHTML+= `
@@ -5,28 +7,41 @@ for (producto of productos){
         <i class="fas fa-tshirt"></i>
         <h3>Precio $${producto.precio}</h3>
         <h3>Nombre: ${producto.nombre}</h3>
-        <button onclick="add(${producto.id})" class="btn btn-danger">Agregar al Carrito</button>
+        <button onclick="add(${producto.id})" class="btn btn-success">Agregar al Carrito</button>
     </div>
     `
 }
-//abrir y cerrar carrito 
-let verCarrito = document.getElementById("verCarrito")
-let contenedorModal = document.querySelector(".box-modal")
-verCarrito.addEventListener("click",()=>{
-    contenedorModal.classList.toggle("modal-active")
-})
-
-contenedorModal.addEventListener("click", ()=>{
-    contenedorModal.classList.toggle("modal-active")
-})
 
 // Array contenedor del carrito
 let carrito = [];
 
-// Variable contenedor del reduce para el saldo
-let total ="";
 
-//Funcion que muestra el contador de productos
+//Preguntar si hay informacion en localStorage
+let carritoLS = JSON.parse(localStorage.getItem(`carrito`))
+
+if (carritoLS){
+    carrito = carritoLS
+    contador()
+    renderCarrito()
+}
+
+
+
+//Abrir y cerrar carrito 
+ let verCarrito = document.getElementById("verCarrito")
+ let contenedorModal = document.querySelector(".box-modal")
+ let btnClose = document.querySelector(".btn-close")
+ verCarrito.addEventListener("click",()=>{
+     contenedorModal.classList.toggle("modal-active")
+ })
+
+ btnClose.addEventListener("click", ()=>{
+     contenedorModal.classList.toggle("modal-active")
+ })
+
+
+
+//Funcion que muestra el contador de productos  
 
 function contador(){
     let cantidadProductos = carrito.length;
@@ -44,6 +59,7 @@ function add(x){
  contador()
  renderCarrito()
  sumaCarrito()
+ saveStorage()
 
 }
 
@@ -72,14 +88,22 @@ function sumaCarrito(){
     console.log(total)
 }
 
+// Guardar en localStorage
+
+function saveStorage(){
+    localStorage.setItem(`carrito`, JSON.stringify(carrito))
+}
+
 // Remover productos del carrito 
 function removeProduct(idProducto){
     let id = idProducto
-    let serchProduct = carrito.find((producto)=> producto.id === id)
     let positionProduct = carrito.findIndex((producto) => producto.id === id)
     carrito.splice(positionProduct,1)
     console.log(positionProduct)
     renderCarrito()
     contador()
+    sumaCarrito()
+    saveStorage()
+
 
 }
