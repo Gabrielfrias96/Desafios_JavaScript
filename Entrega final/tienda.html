@@ -14,6 +14,7 @@
     <title>Document</title>
 </head>
 <body>
+    <!--Aqui Esta la Navegacion-->
     <div id="header" class="container-fluid d-flex justify-content-between " >
         <div class="container-logo">
             <img class="img-logo" src="img/logo.png" alt="">
@@ -26,12 +27,20 @@
             </ul>
 
         </div>
-        <div id="users">
+        <div id="users" class="d-flex justify-content-evenly align-items-center p-5">
 
         </div>
 
     </div>
     <hr>
+    <!--Aqui Empieza la tienda-->
+    <div class="container-fluid">
+        <div id="tienda" class="row d-flex  align-items-center">
+            <!--Aqui se renderizan los productos-->
+        </div>
+    </div>
+
+    <!--Aqui estan Los modals-->
     <div id="box-login" class="box-modal">
         <div class="modal-login">
             <div class="encabezado-login d-flex justify-content-between">
@@ -44,12 +53,12 @@
                     <input id="nameLogin" type="text" placeholder="Nombre">
                 </div>
                 <div class="col-12 mt-3">
-                    <input type="password" placeholder="Password">
+                    <input id="passwordLogin" type="password" placeholder="Password">
                 </div>
                 <div class="col-12 mt-5">
-                    <button class="btn btn-dark" onclick="login()">Iniciar</button>
+                    <button class="btn btn-dark" onclick="iniciarSesion()">Iniciar</button>
                 </div>
-                <div id="ErrorLogin" class="col-12"></div>
+                <div id="ErrorLogin" class="col-12 mt-2"></div>
             </div>
             
             </div>
@@ -64,25 +73,54 @@
             <div class="row">
                 <div class="col-6 text-start">
                     <h6>Nombre</h6>
-                    <input type="text" >
+                    <input id="nombreUser" type="text" >
                 </div>
                 <div class="col-6">
                     <h6>Apellido:</h6>
                     <input type="text">
                 </div>
                 <div class="col-6 mt-3">
-                    <input type="email" placeholder="Email" required>
+                    <input id="mailUser" type="email" placeholder="Email" required>
                 </div>
                 <div class="col-6 mt-3">
-                    <input type="password" placeholder="Password" required>
+                    <input id="passwordUser" type="password" placeholder="Password" required>
                 </div>
                 <div class="col-12">
-                    <button class="btn btn-dark mt-5" onclick="register()">Registrarme</button>
+                    <button class="btn btn-dark mt-5" onclick="createUser()">Registrarme</button>
                 </div>
             </div>
         </div>
     </div>
+    <div id="carrito" class="box-modal-carrito">
+        <div class="modal-carrito">
+            <div class="box-header d-flex justify-content-between align-items-center">
+                <i class="fas fa-shopping-cart"></i>
+                <h2>Tu pedido</h2>
+                <button id="closeCarrito" class="btn btn-close "></button>
+            </div>
+            <div class="box-pre">
+                <div class="row pre-list">
+                    <div class="col-3"><h2>Producto</h2></div>
+                    <div class="col-3"><h2>Cantidad</h2></div>
+                    <div class="col-3"><h2>Precio</h2></div>
+                    <div class="col-3"><h2>Eliminar</h2></H2></div>
+                </div>
+            </div>
+            <div class="container-fluid productos-modal">
+                <div id="box-productos" class="row">
+
+                </div>
+
+            </div>
+            <div id="reduce" class="total text-center">
+                
+                
+            </div>
+        </div>
+    </div>
     <script src="users.js"></script>
+    <script src="productos.js"></script>
     <script src="app.js"></script>
+    <script src="carrito.js"></script>
 </body>
 </html>

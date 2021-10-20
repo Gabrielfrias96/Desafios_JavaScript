@@ -14,6 +14,7 @@
     <title>Document</title>
 </head>
 <body>
+    <!--Aqui Esta la Navegacion-->
     <div id="header" class="container-fluid d-flex justify-content-between " >
         <div class="container-logo">
             <img class="img-logo" src="img/logo.png" alt="">
@@ -32,9 +33,11 @@
 
     </div>
     <hr>
+    <!--Aqui esta la Primer seccion de la Page-->
     <div class="encabezado text-center mt-5">
         <h1>Jesus Summer Camp</h1>
     </div>
+    <!--Aqui estan Los modals-->
     <div id="box-login" class="box-modal">
         <div class="modal-login">
             <div class="encabezado-login d-flex justify-content-between">
@@ -85,7 +88,38 @@
             </div>
         </div>
     </div>
+    <div id="carrito" class="box-modal-carrito">
+        <div class="modal-carrito">
+            <div class="box-header d-flex justify-content-between align-items-center">
+                <i class="fas fa-shopping-cart"></i>
+                <h2>Tu pedido</h2>
+                <button id="closeCarrito" class="btn btn-close "></button>
+            </div>
+            <div class="box-pre">
+                <div class="row pre-list">
+                    <div class="col-3"><h2>Producto</h2></div>
+                    <div class="col-3"><h2>Cantidad</h2></div>
+                    <div class="col-3"><h2>Precio</h2></div>
+                    <div class="col-3"><h2>Eliminar</h2></H2></div>
+                </div>
+            </div>
+            <div class="container-fluid productos-modal">
+                <div id="box-productos" class="row">
+
+                </div>
+
+            </div>
+            <div id="reduce" class="total text-center">
+                
+                
+            </div>
+        </div>
+    </div>
     <script src="users.js"></script>
+    <script src="productos.js"></script>
     <script src="app.js"></script>
+    <script src="carrito.js"></script>
+
+    <button></button>
 </body>
 </html>

@@ -12,6 +12,9 @@ if(usersLS){
 // let userPosition = null;
 
 let userState = JSON.parse(localStorage.getItem('state'))
+//Si no hay nada en el LocalStorage que se asigne False
+if(userState == null){ userState = false}
+//Posicion del Usuario en array
 let userPosition = JSON.parse(localStorage.getItem('position'))
 
 if (usersLS && usersLS.length == 1) {
@@ -25,14 +28,24 @@ if (usersLS && usersLS.length == 1) {
     boxUser.innerHTML=`<span id="login-modal"><i class="fas fa-sign-in-alt"></i> Iniciar Sesion</span> | <span id="register-modal">Registrarse</span>`
 
 }
-//Consultar
+//Consultar si el Usuario sigue activo
 consultaState()
 
 function consultaState(){
     if (userState){
-        boxUser.innerHTML=`<div><i style="font-size: 2rem;" class="far fa-user m-2"></i> ${users[userPosition].nombre} <button class="btn btn-dark m-5" onclick="closeSesion()">Cerrar Sesion</button>
-        </div>`
-    } else if (userState == false){
+        boxUser.innerHTML=`
+        <div class="m-3">
+        <i id="btn-carrito" class="fas fa-shopping-cart"></i>
+        </div>
+        <div class="m-3">
+            ${users[userPosition].nombre}
+       </div>
+       <div class="m-3">
+        <button class="btn btn-dark" onclick="closeSesion()">Cerrar Sesion</button>
+       </div>
+
+        `
+    } else if (userState == null || userState == false){
         
         boxUser.innerHTML=`<span id="login-modal"><i class="fas fa-sign-in-alt"></i> Iniciar Sesion</span> | <span id="register-modal">Registrarse</span>`
 }
@@ -125,6 +138,7 @@ function iniciarSesion(){
     console.log(serchPassword)
 
     renderUILogin(serchName,serchPassword)
+    window.location.reload()
 }
 
 //renderizar UI Usuario Logeado
@@ -144,7 +158,7 @@ function renderUILogin (a,b){
         let confirmUser = users[a].nombre
         boxUser.innerHTML=`
         <div class="m-3">
-            <i style="font-size: 1.5rem;" class="far fa-user"></i>
+        <i id="btn-carrito" class="fas fa-shopping-cart "></i>
         </div>
         <div class="m-3">
              ${confirmUser} 
@@ -173,6 +187,15 @@ function renderUILogin (a,b){
 
    function closeSesion(){
        userState = false
+       window.location.reload()
        localStorage.setItem(`state`, JSON.stringify(userState))
        consultaState()
+       resetCarrito()
+   }
+
+
+   // reiniciar carrito al Cerrar Sesion
+
+   function resetCarrito(){
+       localStorage.removeItem(`carrito`)
    }
