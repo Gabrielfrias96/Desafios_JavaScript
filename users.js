@@ -28,6 +28,7 @@ if (usersLS && usersLS.length == 1) {
     boxUser.innerHTML=`<span id="login-modal"><i class="fas fa-sign-in-alt"></i> Iniciar Sesion</span> | <span id="register-modal">Registrarse</span>`
 
 }
+
 //Consultar si el Usuario sigue activo
 consultaState()
 
