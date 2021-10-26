@@ -7,16 +7,19 @@ else{
     renderCarrito()
 }
 // abrir y cerrar Carrito
-const btnCarrito = document.getElementById(`btn-carrito`)
-const boxCarrito = document.getElementById(`carrito`)
-const btnCloseCarrito = document.getElementById(`closeCarrito`)
-btnCarrito.addEventListener('click',()=>{
+
+    const btnCarrito = document.getElementById(`btn-carrito`)
+    const boxCarrito = document.getElementById(`carrito`)
+    const btnCloseCarrito = document.getElementById(`closeCarrito`)
+    btnCarrito.addEventListener('click',()=>{
     boxCarrito.classList.toggle(`modal-active`)
-})
+    })
 
 btnCloseCarrito.addEventListener('click',()=>{
     boxCarrito.classList.toggle(`modal-active`)
-})
+    })
+
+    setInterval(function(){ console.log("Hello"); }, 1000);
 
 
 

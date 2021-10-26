@@ -45,7 +45,9 @@ function consultaState(){
         <button class="btn btn-dark" onclick="closeSesion()">Cerrar Sesion</button>
        </div>
 
-        `
+        `;
+
+        
     } else if (userState == null || userState == false){
         
         boxUser.innerHTML=`<span id="login-modal"><i class="fas fa-sign-in-alt"></i> Iniciar Sesion</span> | <span id="register-modal">Registrarse</span>`
