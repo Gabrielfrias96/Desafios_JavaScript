@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ 
+
+body{
+    background-color: rgb(247, 243, 243);
+    font-family: "CHANEWEI", Helvetica, Arial, sans-serif;
+}
+
+.bg-primary{
+    background-color:#0389d1 !important ;
+    color: aliceblue ;
+}
+
+.container-nav{
+    background-color:#037dbf;
+}
+.img-logo{
+    color:white;
+    width: 8wh;
+    height: 8vh;
+}
+
+.img-portada{
+    width: 50wh;
+    height: 50vh;
+}
+
+ul li{
+    text-align: center;
+    padding: 10px 10px 0px 10px;
+    display: inline-block;
+    
+}
+
+ul li a{
+    text-decoration: none;
+    color: white !important;
+}
+
+ul li a:hover{
+    color: rgb(206, 194, 194) !important;
+}
+
+/*============== */
+.caja-video{
+    position: relative;
+    width: 100%;
+    height: 60vh
+}
+
+.container-hero{
+    width: 100%;
+    height: 80vh;
+}
+
+.video-hero{
+    width: 1000px;
+    height: 60vh;
+    object-fit: cover;
+    
+}
+
+.logo-video{
+    position: absolute;
+    width: 100%;
+    height: 60vh;
+    top:0;
+    background-color:rgba(0,0,0,0.5);
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+ .logo-video img{
+     width: 330px;
+ }
+
+
+
+/* Animaciones */
+
+animate__animated animate__bounceIn {
+    --animation-delay: 2;
+}
+
+/* Cards Mision*/
+.mision{
+    padding:10px;
+    border-radius:25px;
+    width: 350px;
+    
+    color: black;
+}
+
+.img-card{
+   width: 100%;
+   border-radius:25px;
+   height: 200px;
+   object-fit: cover;
+}
+
+
+/* ====== Social Media ======*/
+
+.container-social{
+    position:fixed;
+    right: 0;
+    top:150px;
+    z-index: 10;
+    cursor:pointer;
+}
+
+.social-wpp{
+    padding:10px;
+    background-color:rgb(55, 219, 55);
+    color: white;
+    border-top-left-radius: 25px;
+}
+
+.social-fb{
+    padding:10px;
+    background-color:rgb(0, 81, 255);
+    color: white;
+}
+
+.social-insta{
+    padding:10px;
+    background-color:rgb(43, 43, 43);
+    color : white;
+
+}
+
+.social-mail{
+    padding:10px;
+    background-color:rgb(218, 60, 32);
+    color:white;
+}
+
+.social-mail{
+    padding:10px;
+    border-bottom-left-radius: 25px;
+}
+
+
+i{
+    font-size: 1.5rem;
+}
+
+
+/* === Donacion ====*/
+
+
+
+.box-donacion{
+    width: 100%;
+    height:100vh;
+    background-color:rgb(142, 85, 233);
+    height:300px;
+}
+
+.donacion{
+    width: 80%;
+    font-weight: 700;;
+    height:150px;
+    background-color:white;
+    border-radius: 25px;
+    color: black;
+}
+
+.donacion a{
+    
+    text-decoration: none;
+   
+}
