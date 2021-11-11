@@ -18,9 +18,8 @@ body{
     background-color:#037dbf;
 }
 .img-logo{
-    color:white;
-    width: 8wh;
-    height: 8vh;
+    width: 7wh;
+    height: 7vh;
 }
 
 .img-portada{
@@ -36,12 +35,13 @@ ul li{
 }
 
 ul li a{
+    font-size: 1.1em;;
     text-decoration: none;
     color: white !important;
 }
 
 ul li a:hover{
-    color: rgb(206, 194, 194) !important;
+    color: rgb(230, 222, 222) !important;
 }
 
 /*============== */
@@ -89,7 +89,7 @@ animate__animated animate__bounceIn {
 /* Cards Mision*/
 
 .show-card{
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
 .btn-primary{
