@@ -88,6 +88,19 @@ animate__animated animate__bounceIn {
 
 /* Cards Mision*/
 
+.show-card{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.btn-primary{
+    background-color:#0389d1 !important;
+    color:white !important;
+}
+
+.btn-primary:hover{
+   background-color: #037dbf !important;
+   color: white !important;
+}
 
 .barra{
     width: 100%;
