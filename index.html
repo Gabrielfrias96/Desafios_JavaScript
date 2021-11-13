@@ -26,31 +26,52 @@
     <title>Fundacion Elegir Sonreir</title>
 </head>
 <body>
-    <header><!--Aca esta el NavBar-->
-        <div class=" navbar navbar-dark bg-primary container-fluid container-nav d-flex justify-content-between align-items-center">
-            <img class="img-fluid img-logo" type="video/mp4" src="img/logo_white.png" alt="logo de la fundacion">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="#">Historia</a></li>
-                <li><a href="#">Actividades</a></li>
-                <li><a href="contact.html">Nuestro Equipo</a></li>
-            </ul>
-        </div>
-    </header>
+    <header><!-- Aca esta el Navbar-->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+          <div class="container px-3">
+            <a class="navbar-brand" href="index.html"><img src="img/logo_white.png" alt="logo" class="img-fluid img-logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li>
+                  <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                  <a href="tienda.html">Tienda</a>
+                </li>
+                <li >
+                  <a href="locales.html">Locales</a>
+                </li>
+                <li>
+                  <a href="oulet.html">Oulet</a>
+                </li>
+                <li>
+                  <a href="contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
     <section><!-- Aca esta el video encabezado con el logo-->
         <div class="caja-video">
             <div class="container-hero">
            <video class="video-hero" loop muted autoplay  src="video/fundacion1.mp4" style="width:100%"></video>
-        </div>
-        <div class="logo-video">
-            <img src="img/logo_white.png" alt="">
-        </div>
+            </div>
+            <div class="logo-video">
+                <img src="img/logo_white.png" alt="">
+            </div>
         </div>
     </section>
     <section><!--Aca estan las Card con la Vision de la fundacion-->
-        <div class="container">
-            <div class="row mt-5">
-                <div class="col-4">
+        <div class="container d-flex justify-content-evenly align-items-center">
+            <div class="row  mt-5">
+                <div class="col-12 text-center mb-3">
+                    <h1>Vision</h1>
+                </div>
+                <div class="col-12 col-md-4 m-5">
                     <div class="card show-card" style="width: 18rem;">
                         <img src="img/niño sonriendo.jpg" class="card-img-top img-card" alt="niño sonríendo">
                         <div class="barra"></div>
@@ -61,7 +82,7 @@
                         </div>
                       </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4 m-5">
                     <div class="card show-card" style="width: 18rem;">
                         <img src="img/niña en ciudad.jpg" class="card-img-top img-card" alt="...">
                         <div class="barra"></div>
@@ -72,7 +93,7 @@
                         </div>
                       </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4 m-5">
                     <div class="card show-card" style="width: 18rem;">
                         <img src="img/sembrar.jpg" class="card-img-top img-card" alt="...">
                         <div class="barra"></div>
@@ -93,24 +114,40 @@
     <br>
     <br>
     <br>
+
+    <div class="box-donar">
+        <div class="modal-donar p-5">
+            <div class="text-center">
+                <h1>¡Gracias por tu Ayuda!</h1>
+            </div>
+            <hr>
+            <h4>Elije el Medio de Donacion</h4>
+            <div class="close text-end">
+                <span>Cerrar</span>
+            </div>
+        </div>
+    </div>
     
     <div class="container-social animate__animated animate__slideInRight"><!-- Redes sociales -->
         <div class="social-wpp">
-            <i class="fab fa-whatsapp"></i>
+            <a href=""><i class="fab fa-whatsapp"></i></a>
         </div>
         <div class="social-fb">
-            <i class="fab fa-facebook-f"></i>
+           <a href="https://www.facebook.com/fundacionelegisonreir/" target="_blank"> <i class="fab fa-facebook-f"></i></a>
         </div>
         <div class="social-insta">
-            <i class="fab fa-instagram"></i>
+           <a href=""><i class="fab fa-instagram"></i></a>
         </div>
         <div class="social-mail">
-            <i class="fas fa-envelope"></i>
+            <a href=""><i class="fas fa-envelope"></i></a>
         </div>
         
     </div>
 
 
-    
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
 </body>
 </html>
