@@ -144,6 +144,50 @@ animate__animated animate__bounceIn {
     
 }
 
+.social-insta{
+    padding:10px;
+    background-color:#333;
+    color : white;
+
+}
+
+.social-mail{
+    padding:10px;
+    background-color:#e74c3c;
+    color:white;
+}
+
+.container-social a{
+    color:white;
+}
+
+.social-wpp a{
+    
+    color: white;
+}
+
+.social-fb {
+    padding:10px;
+    background-color:#0389d1;
+    color: white;
+    
+    
+}
+
+.social-insta{
+    padding:10px;
+    background-color:#333;
+    color : white;
+
+}
+
+.social-mail{
+    padding:10px;
+    background-color:#e74c3c;
+    color:white;
+}
+
+
 .social-fb:hover{
     transform: translateX(-15px);
     transition: 0.4s;
@@ -164,18 +208,6 @@ animate__animated animate__bounceIn {
     transition: 0.4s;
 }
 
-.social-insta{
-    padding:10px;
-    background-color:#333;
-    color : white;
-
-}
-
-.social-mail{
-    padding:10px;
-    background-color:#e74c3c;
-    color:white;
-}
 
 .social-mail{
     padding:10px;
@@ -226,6 +258,28 @@ i{
    
 }
 
+/*==================== page Nosotros ====================*/
+
+.box-programa{
+    
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 25px;
+    color: white;
+    width: 150px;
+    background-color:#0389d1;
+}
+
+.boxingShadow{
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+/*.box-programa h6{
+    font-size: 0.8em;
+    font-weight:200;
+
+}
+*/
 
 /*============= Medias Querys ===================*/
 
@@ -261,7 +315,7 @@ i{
             
         }
          .logo-video img{
-             width: 165px;
+             width: 160px;
          }
 
     }
