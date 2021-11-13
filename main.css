@@ -274,6 +274,23 @@ i{
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
+
+#cardPeople{
+    margin-top: 20%;
+    width: 300px;
+    height:100px;
+    border-radius: 25px;
+    background-color:white;
+    
+}
+
+
+.img-people{
+    width: 100px;
+    height:100px;
+    border-radius: 50%;
+}
+
 /*.box-programa h6{
     font-size: 0.8em;
     font-weight:200;
