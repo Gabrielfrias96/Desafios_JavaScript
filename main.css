@@ -276,11 +276,12 @@ i{
 
 
 #cardPeople{
-    margin-top: 20%;
+    margin-top: 10%;
     width: 300px;
     height:100px;
     border-radius: 25px;
     background-color:white;
+    
     
 }
 
@@ -289,6 +290,7 @@ i{
     width: 100px;
     height:100px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 /*.box-programa h6{
