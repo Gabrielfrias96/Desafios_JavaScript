@@ -1,154 +1,124 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WQRV81SB35"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-WQRV81SB35');
-</script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">   
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="bastrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <link rel="icon" type="image/png" href="img/logo.jpg"/>
-    
-
-    <title>Fundacion Elegir Sonreir</title>
+    <title>Document</title>
 </head>
 <body>
-    <header><!-- Aca esta el Navbar-->
-        <nav class="navbar sticky-top navbar-expand-lg navbar-light">
-          <div class="container px-3">
-            <a class="navbar-brand" href="index.html"><img src="img/logo_white.png" alt="logo" class="img-fluid img-logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li>
-                  <a href="index.html">Inicio</a>
-                </li>
-                <li>
-                  <a href="nosotros.html">Nosotros</a>
-                </li>
-                <li >
-                  <a href="actividades.html">Actividades</a>
-                </li>
-                <li>
-                  <a href="oulet.html">Nuestro Equipo</a>
-                </li>
-                <li>
-                  <a href="donar.html">Donar</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </header>
-    <section><!-- Aca esta el video encabezado con el logo-->
-        <div class="caja-video">
-            <div class="container-hero">
-           <video class="video-hero" loop muted autoplay  src="video/fundacion1.mp4" style="width:100%"></video>
-            </div>
-            <div class="logo-video">
-                <img src="img/logo_white.png" alt="">
-            </div>
+    <!--Aqui Esta la Navegacion-->
+    <div id="header" class="container-fluid d-flex justify-content-between " >
+        <div class="container-logo">
+            <img class="img-logo" src="img/logo.png" alt="">
         </div>
-    </section>
-    <section><!--Aca estan las Card con la Vision de la fundacion-->
-        <div class="container ">
-            <div class="row  mt-5">
-                <div class="col-12 text-center mb-3">
-                    <h1>¿En que Trabajamos?</h1>
-                </div>
-                <div class="col-12 col-md-4 my-3 d-flex justify-content-evenly align-items-center">
-                    <div class="card show-card" style="width: 18rem;">
-                        <img src="img/niño sonriendo.jpg" class="card-img-top img-card" alt="niño sonríendo">
-                        <div class="barra"></div>
-                        <div class="card-body">
-                          <h5 class="card-title">Padrinazgo</h5>
-                          <p class="card-text">Una de las maneras de colaborar con la fundacion es comprometerte con 12 meses de padrinazgo de una de las nenas o bebes que cuidamos y ser parte de sus vidas. </p>
-                          <a href="#" class="btn btn-primary">Ver Hogares</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-12 col-md-4 my-3 d-flex justify-content-evenly align-items-center">
-                    <div class="card show-card" style="width: 18rem;">
-                        <img src="img/niña en ciudad.jpg" class="card-img-top img-card" alt="...">
-                        <div class="barra"></div>
-                        <div class="card-body">
-                          <h5 class="card-title">Transformacion</h5>
-                          <p class="card-text">Acompañamos a cada una de las chicas en cada etapa de su vida, desde su niñez hasta su juventud.</p>
-                          <a href="#" class="btn btn-primary">Ver Hogares</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-12 col-md-4 my-3 d-flex justify-content-evenly align-items-center">
-                    <div class="card show-card" style="width: 18rem;">
-                        <img src="img/sembrar.jpg" class="card-img-top img-card" alt="...">
-                        <div class="barra"></div>
-                        <div class="card-body">
-                          <h5 class="card-title">Sembra en Ellas</h5>
-                          <p class="card-text">Podes ayudarnos a darles una familia y una vida diferente con tu aporte. La Fundacion posee una cuenta de Banco donde podras aportar libremente tu aporte, para seguir avanzando.</p>
-                          <a href="#" class="btn btn-primary">Ver Hogares</a>
-                        </div>
-                      </div>
-                </div>
-            </div>
+        <div class="container-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="contact.html">Soporte</a></li>
+            </ul>
+
         </div>
-    </section>
-    
-    
-   
+        <div id="users" class="d-flex justify-content-evenly align-items-center p-5">
 
-    <br>
-    <br>
-    <br>
+        </div>
 
-    <div class="box-donar">
-        <div class="modal-donar p-5">
-            <div class="text-center">
-                <h1>¡Gracias por tu Ayuda!</h1>
+    </div>
+    <hr>
+    <!--Aqui esta la Primer seccion de la Page-->
+    <div class="encabezado text-center mt-5">
+        <h1>Jesus Summer Camp</h1>
+    </div>
+    <!--Aqui estan Los modals-->
+    <div id="box-login" class="box-modal">
+        <div class="modal-login">
+            <div class="encabezado-login d-flex justify-content-between">
+                <h2> </h2>
+                <h2>Inicia Secion</h2>
+                <button id="colseLogin" class="btn btn-close"></button>
             </div>
-            <hr>
-            <h4>Elije el Medio de Donacion</h4>
-            <div class="close text-end">
-                <span>Cerrar</span>
+            <div class="row">
+                <div class="col-12 mt-5">
+                    <input id="nameLogin" type="text" placeholder="Nombre">
+                </div>
+                <div class="col-12 mt-3">
+                    <input id="passwordLogin" type="password" placeholder="Password">
+                </div>
+                <div class="col-12 mt-5">
+                    <button class="btn btn-dark" onclick="iniciarSesion()">Iniciar</button>
+                </div>
+                <div id="ErrorLogin" class="col-12 mt-2"></div>
+            </div>
+            
+            </div>
+    </div>
+    <div id="register" class="box-modal2">
+        <div class="modal-register ">
+            <div class="encabezado-login d-flex justify-content-between">
+                <h2> </h2>
+                <h2>Registrate!</h2>
+                <button id="colseRegister" class="btn btn-close"></button>
+            </div>
+            <div class="row">
+                <div class="col-6 text-start">
+                    <h6>Nombre</h6>
+                    <input id="nombreUser" type="text" >
+                </div>
+                <div class="col-6">
+                    <h6>Apellido:</h6>
+                    <input type="text">
+                </div>
+                <div class="col-6 mt-3">
+                    <input id="mailUser" type="email" placeholder="Email" required>
+                </div>
+                <div class="col-6 mt-3">
+                    <input id="passwordUser" type="password" placeholder="Password" required>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-dark mt-5" onclick="createUser()">Registrarme</button>
+                </div>
             </div>
         </div>
     </div>
-    
-    <div class="container-social animate__animated animate__slideInRight"><!-- Redes sociales -->
-        <div class="social-wpp">
-            <a href=""><i class="fab fa-whatsapp"></i></a>
+    <div id="carrito" class="box-modal-carrito">
+        <div class="modal-carrito">
+            <div class="box-header d-flex justify-content-between align-items-center">
+                <i class="fas fa-shopping-cart"></i>
+                <h2>Tu pedido</h2>
+                <button id="closeCarrito" class="btn btn-close "></button>
+            </div>
+            <div class="box-pre">
+                <div class="row pre-list">
+                    <div class="col-3"><h2>Producto</h2></div>
+                    <div class="col-3"><h2>Cantidad</h2></div>
+                    <div class="col-3"><h2>Precio</h2></div>
+                    <div class="col-3"><h2>Eliminar</h2></H2></div>
+                </div>
+            </div>
+            <div class="container-fluid productos-modal">
+                <div id="box-productos" class="row">
+
+                </div>
+
+            </div>
+            <div id="reduce" class="total text-center">
+                
+                
+            </div>
         </div>
-        <div class="social-fb">
-           <a href="https://www.facebook.com/fundacionelegisonreir/" target="_blank"> <i class="fab fa-facebook-f"></i></a>
-        </div>
-        <div class="social-insta">
-           <a href=""><i class="fab fa-instagram"></i></a>
-        </div>
-        <div class="social-mail">
-            <a href=""><i class="fas fa-envelope"></i></a>
-        </div>
-        
     </div>
+    <script src="users.js"></script>
+    <script src="app.js"></script>
+    <script src="carrito.js"></script>
 
-
-    <script src="index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-
+    <button></button>
 </body>
 </html>

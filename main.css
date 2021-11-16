@@ -1,340 +1,247 @@
 *{
-    padding: 0;
-    margin: 0;
+    margin: 0px;
+    padding: 0px;
 }
- 
 
 body{
-    background-color: #f3f0ed;
-    font-family: "CHANEWEI", Helvetica, Arial, sans-serif;
+    background-color: #040e1b;
+    color: white;
+    font-family: 'Acme', sans-serif;
 }
 
-header{
-    background-color:#0389d1;
+hr{
+    color: white;
 }
 
-.bg-primary{
-    background-color:#0389d1 !important ;
-    color: aliceblue ;
+/*======== NAV ===========*/
+#header{
+    padding-top: 20px;
+    padding-left: 70px;;
+    padding-right: 130px;
+    width: 100%;
+    height: 50px;
+    display:flex;
+    align-items:center;
 }
 
+h1{
+    font-size:7rem;
+}
+
+.container-logo{
+    margin: 0;
+}
 .container-nav{
-    background-color:#037dbf;
-}
-.img-logo{
-    width: 7wh;
-    height: 7vh;
-}
-
-.img-portada{
-    width: 50wh;
-    height: 50vh;
+    padding-top:15px;
+    text-align:center;
+    display:flex;
+    justify-content: center;
+    align-items:center;
 }
 
-ul li{
-    text-align: center;
-    padding: 10px 10px 0px 10px;
+
+.container-nav ul{
+    list-style: none;
+   
+}
+
+
+.container-nav ul li{
+    
+    padding: 10px;
     display: inline-block;
     
+    
 }
 
-ul li a{
-    font-size: 1.1em;;
+.container-nav ul li a{
     text-decoration: none;
-    color: white !important;
-}
-
-ul li a:hover{
-    color: rgb(230, 222, 222) !important;
-}
-
-/*============== */
-.caja-video{
-    position: relative;
-    width: 100%;
-    height: 60vh
-}
-
-.container-hero{
-    width: 100%;
-    height: 80vh;
-}
-
-.video-hero{
-    width: 100%;
-    height: 60vh;
-    object-fit: cover;
+    color: white;
+    font-size: 1.3rem;
     
 }
 
-.logo-video{
-    position: absolute;
-    width: 100%;
-    height: 60vh;
-    top:0;
-    background-color:rgba(0,0,0,0.5);
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
+.img-logo{
+    width: 15wh;
+    height:15vh;
+}
+
+
+
+/* ======= USER UI ========*/
+
+
+#users span{
+    font-size: 1.3rem;
+    padding: 10px;
+    cursor: pointer;
     
 }
- .logo-video img{
-     width: 330px;
- }
 
 
 
-/* Animaciones */
+/*=========Modals=====*/
 
-animate__animated animate__bounceIn {
-    --animation-delay: 2;
-}
-
-/* Cards Mision*/
-
-.show-card{
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-}
-
-.btn-primary{
-    background-color:#0389d1 !important;
-    color:white !important;
-}
-
-.btn-primary:hover{
-   background-color: #037dbf !important;
-   color: white !important;
-}
-
-.barra{
-    width: 100%;
-    height:10px;
-    background-color:#0389d1;
-}
-
-.img-card{
-   width: 100%;
-   height: 200px;
-   object-fit: cover;
-}
-
-
-/* ====== Social Media ======*/
-
-.container-social{
+.box-modal{
     position:fixed;
-    right: 0;
-    top:150px;
-    z-index: 10;
-    cursor:pointer;
+   top: 0px;
+   left: 0px;
+   width:100%;
+   height:100vh;
+   display: flex;
+   justify-content:space-evenly;
+   align-items:center;
+   background-color: rgba(0,0,0,0.4);
+   opacity:0 ;
+    visibility: hidden;
 }
-
-.social-wpp{
-    padding:10px;
-    background-color:#18b596;
-    color: white;
-    border-top-left-radius: 25px;
-}
-
-.social-fb {
-    padding:10px;
-    background-color:#0389d1;
-    color: white;
-    
-    
-}
-
-.social-insta{
-    padding:10px;
-    background-color:#333;
-    color : white;
-
-}
-
-.social-mail{
-    padding:10px;
-    background-color:#e74c3c;
-    color:white;
-}
-
-.container-social a{
-    color:white;
-}
-
-.social-wpp a{
-    
-    color: white;
-}
-
-.social-fb {
-    padding:10px;
-    background-color:#0389d1;
-    color: white;
-    
+.modal-login{
+    border-radius: 25px;
+    color: #040e1b;
+    width: 300px;
+    height:350px;
+    background-color:rgb(255, 255, 255);
+    text-align:center;
+    padding:25px;
     
 }
 
-.social-insta{
-    padding:10px;
-    background-color:#333;
-    color : white;
-
-}
-
-.social-mail{
-    padding:10px;
-    background-color:#e74c3c;
-    color:white;
-}
-
-
-.social-fb:hover{
-    transform: translateX(-15px);
-    transition: 0.4s;
-}
-
-.social-insta:hover{
-    transform: translateX(-15px);
-    transition: 0.4s;
-}
-
-.social-wpp:hover{
-    transform: translateX(-15px);
-    transition: 0.4s;
-}
-
-.social-mail:hover{
-    transform: translateX(-15px);
-    transition: 0.4s;
-}
-
-
-.social-mail{
-    padding:10px;
-    border-bottom-left-radius: 25px;
-}
-
-
-i{
-    font-size: 1.5rem;
-}
-
-
-/* === Donacion ====*/
-
-
-
-.box-donar{
-    width: 100%;
-    height:100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color:rgb(0,0,0,0.7);
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
-    overflow: hidden;
+.box-modal2{
+    position:fixed;
+   top: 0px;
+   left: 0px;
+   width:100%;
+   height:100vh;
+   display: flex;
+   justify-content:space-evenly;
+   align-items:center;
+   background-color: rgba(0,0,0,0.4);
+   opacity:0 ;
     visibility: hidden;
 }
 
-.modal-donar{
-    width: 80%;
-    font-weight: 700;
+.box-modal-carrito{
+    position:fixed;
+   top: 0px;
+   left: 0px;
+   width:100%;
+   height:100vh;
+   display: flex;
+   justify-content:space-evenly;
+   align-items:center;
+   background-color: rgba(0,0,0,0.4);
+   opacity:0 ;
+    visibility: hidden;
+}
+
+
+.modal-register{
+    border-radius: 25px;
+    color: #040e1b;
+    width: 400px;
+    height:300px;
+    background-color:rgb(255, 255, 255);
+    text-align:center;
+    padding:25px;
+
+}
+
+
+.modal-carrito{
+    border-radius: 25px;
+    color: #040e1b;
+    width: 75%;
     height:500px;
-    background-color:white;
-    color: black;
+    background-color:rgb(255, 255, 255);
+    text-align:center;
+    padding:25px;
+    overflow: scroll;
+
+}
+
+.box-pre{
+    text-align:start;
+    width: 100%;
+}
+
+.pre-list{
+    background-color:rgb(138, 140, 206);
 }
 
 
 .modal-active{
-    visibility: visible
+    opacity: 1;
+    visibility: visible;
 }
 
-
-.donacion a{
-    
-    text-decoration: none;
-   
+#btn-carrito{
+    cursor:pointer;
+}
+/*======= CARDS TALLERES======*/
+#igredientes {
+    list-style: none ;
 }
 
-/*==================== page Nosotros ====================*/
-
-.box-programa{
-    
-    padding: 5px;
-    cursor: pointer;
-    border-radius: 25px;
-    color: white;
-    width: 150px;
-    background-color:#0389d1;
-}
-
-.boxingShadow{
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-}
-
-
-#cardPeople{
-    margin-top: 10%;
-    width: 300px;
-    height:100px;
-    border-radius: 25px;
-    background-color:white;
-    
-    
-}
-
-
-.img-people{
-    width: 100px;
-    height:100px;
-    border-radius: 50%;
+.card-img-hero{
+    width: 250px;
+    height: 150px;
     object-fit: cover;
 }
+.btn-add{
+    position: relative;
+    display: inline-block;
+    padding:15px 30px;
+    color:#2196f3;
+    letter-spacing:3px;
+    text-decoration: none;
+    overflow:hidden;
+    box-shadow: 0 2px 2px #2196f3;
+    border-radius: 15px;
+    transition:0.2s;
+    
+}
+.card-cool{
+    border-radius: 25px;
+    width: 250px;
+    background-color:#19355a ;
+}
+.card-cool:hover{
+    background-color:#f19239;
+    box-shadow: 0 0 10px #f38721,0 0 30px #f38721, 0 0 100px #f38721 ;
+}
 
-/*.box-programa h6{
-    font-size: 0.8em;
-    font-weight:200;
+.btn-add:hover{
+    color:white;
+    background-color:#2196f3;
+    box-shadow: 0 0 10px #2196f3,0 0 40px #2196f3, 0 0 80px #2196f3  ;
+}
+
+.ocultar{
+    visibility: hidden;
+}
+
+/*====== UI CARRITO =====*/
+
+.img-carrito {
+    width:100px;
+    height:60px;
+    border-radius:15px;
+    box-shadow: 0 2px 3px rgb(100, 93, 93);
 
 }
-*/
 
-/*============= Medias Querys ===================*/
+#btn-carrito{
+    border-radius:50%;
+    font-size:1.5rem;
+}
+#btn-carrito:hover{
+   color:#2196f3 ;
+}
 
-    @media only screen and (max-width: 557px){
+#btn-buy{
+    cursor:pointer;
+}
 
-        .caja-video{
-            position: relative;
-            width: 100%;
-            height: 30vh
-        }
-        
-        .container-hero{
-            width: 100%;
-            height: 40vh;
-        }
-        
-        .video-hero{
-            width: 100%;
-            height: 30vh;
-            object-fit: cover;
-            
-        }
-        
-        .logo-video{
-            position: absolute;
-            width: 100%;
-            height: 30vh;
-            top:0;
-            background-color:rgba(0,0,0,0.5);
-            display:flex;
-            justify-content: space-evenly;
-            align-items: center;
-            
-        }
-         .logo-video img{
-             width: 160px;
-         }
-
-    }
+#deleteProducto{
+    cursor:pointer;
+}
